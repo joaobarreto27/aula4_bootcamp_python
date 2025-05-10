@@ -427,7 +427,7 @@ def saudacao(nome: str, idade: int = 30) -> str:
 
 ![imagem_03](images/3.jpg)
 
-Refatorar nosso código usando Dicionário, Type Hint e Funcões.
+Refatorar nosso código usando Dicionário, Type Hint e Funcões, e ir Salvando o Resultado em um Arquivo.
 
 ![imagem_04](images/4.jpg)
 
