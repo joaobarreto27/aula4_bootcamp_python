@@ -40,6 +40,8 @@ Este serviço há o tratamento de erros, que serão descritos abaixo:
 - O percentual recebido, só aceita valores numéricos
 - Se for realizado mais de 5 tentativas com erro, o serviço será abortado
 
+---
+
 ## Modularização da Tarefas
 
 As tarefas foram separadas por módulos, com as seguintes tarefas:
@@ -49,3 +51,11 @@ As tarefas foram separadas por módulos, com as seguintes tarefas:
 - valida_salario
 - valida_status_bonus_salario
 - processar_validacoes
+
+---
+
+## Carga do Dados
+
+Ao Executar o serviço, os dados são salvo em uma planilha.
+
+Com isso, tendo o todo controle histórico de todas as execuções.

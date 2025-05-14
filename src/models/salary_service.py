@@ -1,5 +1,6 @@
 from openpyxl import Workbook, load_workbook
 import os
+from datetime import datetime
 
 def calcula_bonus(bonus_percentual: float, valor_bonus: float,salario: float):
      resultado: float = valor_bonus + (salario * bonus_percentual)
@@ -42,13 +43,14 @@ def valida_status_bonus_salario(
             print("Erro: Tente novamente")
             return False, None
 
-def junta_dados(nome: str, salario: float, bonus_percentual: float, valor_bonus: float, resultado: float):  
+def junta_dados(nome: str, salario: float, bonus_percentual: float, valor_bonus: float, resultado: float):      
     dicionario:dict = {
         'nome': nome,
         'salario': salario,
         'bonus_percentual': bonus_percentual,
         'valor_bonus': valor_bonus,
-        'resultado': resultado
+        'resultado': resultado,
+        'data': datetime.now().strftime('%Y-%m-%d %H:%M:%S')
     }
     return dicionario
 
